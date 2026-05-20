@@ -17,9 +17,9 @@
 
 | 題號 | 題目名稱 | 難易度 | 核心觀念 / 演算法 | 解題程式碼與解析 | 狀態 |
 | :---: | :--- | :---: | :--- | :---: | :---: |
-| **1** | UVa 10041 - Vito's Family | 🟢 易 | 數學、中位數 (`std::sort`) | [📄 點我看解析](./UVA10041.cpp) | ✅ AC |
-| **2** | UVa 10055 - Hashmat the Brave Warrior | 🟢 易 | 溢位處理、絕對值 (`long long`) | [📄 點我看解析](./UVA10055.cpp) | ✅ AC |
-| **3** | UVa 10107 - What is the Median? | 🟡 中 | 動態中位數、資料結構 | 撰寫中... | ⏳ 挑戰中 |
+| **1** | UVa 01 - Vito's Family | 🟢 易 | 數學、中位數 (`std::sort`) | [📄 點我看解析](./UVA01.cpp) | ✅ AC |
+| **2** | UVa 02 - Hashmat the Brave Warrior | 🟢 易 | 溢位處理、絕對值 (`long long`) | [📄 點我看解析](./UVA02.cpp) | ✅ AC |
+| **3** | UVa 03 - What is the Median? | 🟡 中 | 動態中位數、資料結構 | 撰寫中... | ⏳ 挑戰中 |
 
 ---
 
