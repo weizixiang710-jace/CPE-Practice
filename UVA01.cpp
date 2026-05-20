@@ -52,6 +52,7 @@ int main(){
         
         for (int i = 0; i < r; ++i){
             result += abs(median - s[i]);
+          //result是會累積相加數的   
           //abs 是絕對值。這行在計算「中位數」與「第 i 個數字」之間的距離（保證是正數）
         }
         
