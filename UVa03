@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+    
+    long long n1, n2;
+    
+    while (cin >> n1 >> n2 && (n1 || n2)){
+    //第一層會先做第一次 是否為0的判斷 主要是針對接收新的數字 新題目直到接收到 00
+
+        int carry = 0, operation = 0;
+     //carry=進位的數字 並且參與計算到下一位 
+       opertion=這裡是設定成一個計數器 計算最後多少次
+        
+        while (n1 > 0 || n2 > 0){
+            int digit_1 = n1 % 10, digit_2 = n2 % 10;
+            
+            int sum = digit_1 + digit_2 + carry;
+            
+            sum >= 10 ? carry = 1, operation++ : carry = 0;
+            
+            n1 /= 10, n2 /= 10;
+        }
+        
+        if (operation){
+            cout << operation << (operation > 1 ? " carry operations." : " carry operation.");
+        }
+        else{
+            cout << "No carry operation.";
+        }
+        
+        cout << '\n';
+        
+    }
+    return 0;
+}
