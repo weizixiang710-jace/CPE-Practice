@@ -1,73 +1,29 @@
 /**
-Given the input 22, the following sequence of numbers will be printed
-給定輸入 22，將會列印出以下數字序列：
-
-22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1
-
-It is conjectured that the algorithm above will terminate (when a 1 is printed) for any integral input
-據猜想，對於任何整數輸入值，上述演算法都會終止（當列印出 1 時）。
-
-value. Despite the simplicity of the algorithm, it is unknown whether this conjecture is true. It has
-儘管該演算法非常簡單，但目前仍無法得知此猜想是否正確。然而，
-
-been verified, however, for all integers n such that 0 < n < 1,000,000 (and, in fact, for many more
-它已經在所有滿足 0 < n < 1,000,000 的整數 n 上得到了驗證（而且事實上，也驗證了更多
-
-numbers than this.)
-高於此範圍的數字。）
-
-Given an input n, it is possible to determine the number of numbers printed before and including
-給定一個輸入 n，可以確定在列印出 1 之前（且包含 1 在內）所列印的數字個數。
-
-the 1 is printed. For a given n this is called the cycle-length of n. In the example above, the cycle
-對於給定的 n，這被稱為 n 的循環長度（cycle-length）。在上述範例中，
-
-length of 22 is 16.
-22 的循環長度為 16。
-
-For any two numbers i and j you are to determine the maximum cycle length over all numbers
-對於任意兩個數字 i 和 j，你需要確定在所有介於
-
-between and including both i and j.
-i 和 j 之間（且包含 i 和 j 兩者）的數字中的最大循環長度
-
-
-輸入格式 (Input)
 Input
-輸入
+The input will consist of a series of pairs of integers i and j, 
+one pair of integers per line. All integerswill be less than 10,000 and greater than 0.
+輸入將由一系列整數對 i 和 j 組成，每行一對整數。所有整數 都將小於 10,000 且大於 0。
 
-The input will consist of a series of pairs of integers i and j, one pair of integers per line. All integers
-輸入將由一系列整數對 i 和 j 組成，每行一對整數。所有整數
-
-will be less than 10,000 and greater than 0.
-都將小於 10,000 且大於 0。
-
-You should process all pairs of integers and for each pair determine the maximum cycle length over
-你應該處理所有的整數對，並針對每一對整數，確定在所有
-
-all integers between and including i and j.
-介於 i 和 j 之間（且包含 i 和 j）的整數之中的最大循環長度。
+You should process all pairs of integers and for each pair deter 
+mine the maximum cycle length overall integers between and including i and j.
+你應該處理所有的整數對，並針對每一對整數，確定在所有 介於 i 和 j 之間（且包含 i 和 j）
+的整數之中的最大循環長度。
 
 You can assume that no operation overflows a 32-bit integer.
 你可以假設沒有任何運算會超出 32 位元整數的溢位範圍。
-
-輸出格式 (Output)
+-------------------------------------------------------------------------------
 Output
-輸出
+For each pair of input integers i and j you should output i, j, 
+and the maximum cycle length for integers between and including i and j.
+對於每對輸入整數 i 和 j，你應該輸出 i、j，以及介於 i 和 j 之間（且包含 i 和 j)的整數的最大循環長度。
 
-For each pair of input integers i and j you should output i, j, and the maximum cycle length for integers
-對於每對輸入整數 i 和 j，你應該輸出 i、j，以及介於
+These three numbers should be separated by at least one space with all
+three numbers on one line and with one line of output for each line of input. 
+這三個數字應該用至少一個空格隔開，且所有三個數字都要在同一行，且每行輸入對應一行輸出。
 
-between and including i and j. These three numbers should be separated by at least one space with all
-i 和 j 之間（且包含 i 和 j）的整數的最大循環長度。這三個數字應該用至少一個空格隔開，且所有
-
-three numbers on one line and with one line of output for each line of input. The integers i and j must
-三個數字都要在同一行，且每行輸入對應一行輸出。整數 i 和 j 必須
-
-appear in the output in the same order in which they appeared in the input and should be followed by
-以它們在輸入中出現的相同順序出現在輸出中，並且其後應該緊接著
-
-the maximum cycle length (on the same line).
+The integers i and j mustappear in the output in the same order in which they appeared
+in the input and should be followed by the maximum cycle length (on the same line).
+整數 i 和 j 必須以它們在輸入中出現的相同順序出現在輸出中，並且其後應該緊接著
 最大循環長度（在同一行上）。
 
 **/
