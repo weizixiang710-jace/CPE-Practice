@@ -1,20 +1,29 @@
 /**
-題目翻譯：
-
-世界知名的黑幫 Vito Deadstone 要搬到紐約了。他在那邊有個大家族，他們全部都住在 Lamafia 大街上。
-因為他時常要拜訪他所有的親戚，所以他想要找一間離他們很近的房子。
-Vito 想最小化與他們的距離和，然後還威脅你要寫個程式幫他解決這個問題。
-
-Input
+"Input"
 The input consists of several test cases. The first line contains the number of test cases.
-For each test case you will be given the integer number of relatives r (0 < r < 500) and the
-street numbers (also integers) s1, s2, . . . , si
-, . . . , sr where they live (0 < si < 30000 ). Note that several
-relatives could live in the same street number.
+輸入包含數個測試資料集（test cases）。第一行包含測試資料集的數量
 
-Output
+For each test case you will be given the integer number of relatives r (0 < r < 500) and the
+street numbers (also integers) s1, s2, . . . , si, . . . , sr where they live (0 < si < 30000 ). 
+對於每個測試資料集，您將會得到一個代表親戚數量的整數 r 以及他們所居住的街道門牌號碼（亦為整數）
+
+Note that several relatives could live in the same street number.
+請注意，可能會有數個親戚住在同一個街道門牌號碼。
+
+"Output"
 For each test case your program must write the minimal sum of distances from the optimal Vito’s house
-to each one of his relatives. The distance between two street numbers si and sj is dij = |si − sj |.**/
+to each one of his relatives.
+對於每個測試資料集，您的程式必須寫出（輸出）從 Vito 最理想的家，到他每一個親戚家的最小距離總和
+
+The distance between two street numbers si and sj is dij = |si − sj |.
+兩個街道門牌號碼 s_i 與 s_j 之間的距離為
+
+題目核心主要是由三個部分所組成
+第一個 總專案數量 總迴圈次數
+第二個 親戚的數量 一次測試有幾個個數 
+第三個 街道號碼   個數分別是多少
+
+**/
 
 
 #include <bits/stdc++.h> 
@@ -26,11 +35,16 @@ using namespace std;
 int main(){
     int T;
     cin >> T;
-    
+    /**
+    為甚麼外層會需要一個t 因為:題目要求
+    The input consists of several test cases. 
+    The first line contains the number of test cases.**/
     while (T--){
         int r;
         cin >> r;
-      /**r不是一個數字而已他是由使用者去決定數量的 
+      /**
+      For each test case you will be given the integer number of relatives
+      r不是一個數字而已他是由使用者去決定數量的 
       因為vector <int> s(r);讓他變成一個陣列**/
       //例如: 2 2 4
         
