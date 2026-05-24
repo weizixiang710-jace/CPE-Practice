@@ -15,15 +15,12 @@
 
 ## 🏆 戰績公告板 (刷題清單)
 
-| 題號 | 題目名稱 | 難易度 | 核心觀念 / 演算法 | 解題程式碼與解析 | 狀態 |
+| 題號 | 題目名稱 | 解題程式碼與解析 |
 | :---: | :--- | :---: | :--- | :---: | :---: |
-| **1** | UVa 01 - Vito's Family | 🟢 易 | 數學、中位數 (`std::sort`) | [📄 點我看解析](./UVA01.cpp) | ✅ AC |
-| **2** | UVa 02 - Hashmat the Brave Warrior | 🟢 易 | 溢位處理、絕對值 (`long long`) | [📄 點我看解析](./UVA02.cpp) | ✅ AC |
-| **3** | UVa 03 - What is the Median? | 🟡 中 | 動態中位數、資料結構 | 撰寫中... | ⏳ 挑戰中 |
+| **1** | UVa 01 - Vito's Family | [📄 點我看解析](./UVA01.cpp) | 
+| **2** | UVa 02 - Hashmat the Brave Warrior  | [📄 點我看解析](./UVA02.cpp) | 
+| **3** | UVa 03 - What is the Median? | [📄 點我看解析](./UVA02.cpp) | 
 
 ---
 
-## 💡 常用知識庫與盲點筆記
-* **不確定測資筆數的輸入寫法**：
-  ```cpp
-  while (cin >> n) { ... } // 當沒有輸入時會自動結束迴圈
+
