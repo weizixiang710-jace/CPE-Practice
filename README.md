@@ -19,7 +19,8 @@
 | :---: | :--- | :---: | :--- | :---: | :---: |
 | **1** | UVa 01 - Vito's Family | [📄 點我看解析](./UVA01.cpp) | 
 | **2** | UVa 02 - Hashmat the Brave Warrior  | [📄 點我看解析](./UVA02.cpp) | 
-| **3** | UVa 03 - What is the Median? | [📄 點我看解析](./UVA02.cpp) | 
+| **3** | UVa 03 - What is the Median? | [📄 點我看解析](./UVA02.cpp) |
+| **4** | UVa 04 - The 3n + 1 problem | [📄 點我看解析](./UVA04.cpp) |
 
 ---
 
