@@ -24,9 +24,11 @@ using namespace std;
 int main(){
     long long h, o;
   /**long long：這是 C++ 的一種資料型態，比一般的 int 能容納更大的數字
-  （通常最高可達約 $9 \times 10^{18}$，而 int 只能到約 $2 \times 10^9$）。**/
+  **/
     while (cin >> h >> o){
+      
         cout << abs(h - o) << '\n';
+
     }
     return 0;
 }
